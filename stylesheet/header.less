@@ -1,0 +1,108 @@
+/**
+   Coded by /u/j0be in scss.
+   See scss source here -> http://codepen.io/j0be/pen/MKRVyN
+*/
+body {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	height: 100%;
+	width: 100%;
+	background: #ecf0f1;
+	font-family: 'Allerta Stencil', sans-serif;
+	.header {
+		overflow: auto;
+		background: white;
+		padding: 20px 15%;
+		box-shadow: 0 1px 15px -5px gray;
+		.header__title {
+			float: left;
+			text-decoration: none;
+			color: #2980b9;
+			font-size: 34px;
+		}
+		.header__cta {
+			float: right;
+			.header__cta--button {
+				position: relative;
+				span{
+					    position: absolute;
+					    top: -18px;
+					    right: 0px;
+					    border: 1px solid red;
+					    background: red;
+					    border-radius: 50%;
+					    width: 25px;
+					    height: 25px;
+					    color: #ffffff;
+				}
+				border: none;
+				border-radius: 7px;
+				text-decoration: none;
+				font-size: 15px;
+				font-weight: bold;
+				color: #2980b9;
+				background: #ecf0f1;
+				padding: 10px 15px;
+				margin-left: 15px;
+				box-shadow: 0px 2px 4px rgba(34, 62, 66, 0.25);
+				transition: all .2s ease;
+				font-family: 'Allerta Stencil', sans-serif;
+				outline: none;
+				&:hover {
+					box-shadow: 0px 2px 2px rgba(34, 62, 66, 0.5);
+					cursor: pointer;
+				}
+			}
+		}
+	}
+}
+@media screen and (max-width: 720px) {
+	body {
+		.header__title {
+			width: 100%;
+			margin: 0 auto;
+			text-align: center;
+		}
+		.header__cta {
+			width: 100%;
+			margin: 20px auto;
+			text-align: center;
+			.header__cta--button {
+				margin-top: 10px;
+			}
+		}
+	}
+}
+@media screen and (max-width: 420px) {
+	body {
+		.header__cta--button {
+			margin-left: 0 !important;
+		}
+	}
+}
+	.blackBlock {
+	    background: #ffffff;
+	    margin-top: 50px;
+	    padding: 12px 0;
+	    text-align: center;
+	      p {
+		    color: #6e6e6e;
+		    font-size: 85%;
+		    font-weight: 400;
+		    font-family: ProximaNovaLight;
+		      a {
+		      	cursor: pointer;
+		      	color: #ffffff;
+		      	text-decoration: underline;
+		      	&:hover {
+		      		// color: @yellowClr;
+		      		text-decoration: none;
+		      	}
+		      }
+		  }
+		  span{
+		    font-family: ProximaNovaRegular;
+		  	color: #4e4e4e;
+		  }
+	}

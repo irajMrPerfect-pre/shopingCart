@@ -1,0 +1,1 @@
+@officetechhelp.lazy.controller 'prvcyCtrl', ($rootScope,$scope)->
